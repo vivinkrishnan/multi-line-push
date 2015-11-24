@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Copyright 2015 IBM Corp.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<application xmlns="http://www.worklight.com/application-descriptor" id="HybridTagNotifications" platformVersion="7.1.0.00.20150803-1651">
+    <displayName>HybridTagNotifications</displayName>
+    <description>Tag-based push notifications application</description>
+    <author>
+        <name>application's author</name>
+        <email>application author's e-mail</email>
+        <homepage>http://mycompany.com</homepage>
+        <copyright>Copyright My Company</copyright>
+    </author>
+    <mainFile>index.html</mainFile>
+    <features/>
+    <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
+    <tags>
+        <tag>
+            <name>sample-tag1</name>
+            <description>A sample tag 1</description>
+        </tag>
+        <tag>
+            <name>sample-tag2</name>
+            <description>A sample tag 2</description>
+        </tag>
+    </tags>
+    <android version="1.0">
+        <worklightSettings include="false"/>
+         <pushSender key="API_KEY" senderId="PROJECT_NUMBER"/>
+		<security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+            <publicSigningKey/>
+            <packageName/>
+        </security>
+    </android>
+</application>
