@@ -29,8 +29,8 @@
     </tags>
     <android version="1.0">
         <worklightSettings include="false"/>
-        <pushSender key="AIzaSyCmnOCj3gH8M1TyR_Z5jYSjHxxW0Q_dCyY" senderId="70348405361"/>
-		<security>
+         <pushSender key="API_KEY" senderId="PROJECT_NUMBER"/>
+         <security>
             <encryptWebResources enabled="false"/>
             <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
             <publicSigningKey/>
