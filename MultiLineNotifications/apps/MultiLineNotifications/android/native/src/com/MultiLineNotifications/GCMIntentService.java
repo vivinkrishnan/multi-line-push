@@ -74,7 +74,7 @@ public class GCMIntentService extends com.worklight.androidgap.push.GCMIntentSer
 						                .setContentTitle(title)
 						                .setContentText(msg)
 						                .setStyle(new Notification.BigTextStyle().bigText(msg))
-										.setContentIntent(pendingIntent);
+						                .setContentIntent(pendingIntent);
  		
  		notification = notificationBuilder.build();
  		notification.priority = priority;
