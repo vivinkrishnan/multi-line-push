@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+   	<head>
+   		<meta charset="UTF-8">
+   		<title>Push Notifications</title>
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+   		<!--
+    		<link rel="shortcut icon" href="images/favicon.png">
+    		<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    	-->
+   		<link rel="stylesheet" href="css/main.css">
+   		<script>window.$ = window.jQuery = WLJQ;</script>
+   	</head>
+   	<body style="display: none;">
+   		<div id="header">
+			<h1>Push Notifications</h1>
+		</div>
+   		
+		<div class="wrapper">
+			<input type="button" id="isPushSupportedButton" class="appButtons" value="isPushSupported" onclick="isPushSupported();"/>
+			<input type="button" id="isSubscribedToTagButton" class="appButtons" value="isSubscribed" onclick="isSubscribedToTags();"/>
+			<br />
+      <input type="button" class="subscribeToTagButton appButtons" value="Subscribe to sample-tag1" onclick="subscribeToSampleTag1();" disabled="disabled"/>
+      <br />
+      <input type="button" class="subscribeToTagButton appButtons" value="Subscribe to sample-tag2" onclick="subscribeToSampleTag2();" disabled="disabled"/>
+			<br />
+			<input type="button" class="unsubscribeFromTagButton appButtons" value="Unsubscribe from sample-tag1" onclick="unsubscribeFromSampleTag1();" disabled="disabled"/>
+			<input type="button" class="unsubscribeFromTagButton appButtons" value="Unsubscribe from sample-tag2" onclick="unsubscribeFromSampleTag2();" disabled="disabled"/>				 	
+		</div>
+   	
+   		<script src="js/initOptions.js"></script>
+   		<script src="js/main.js"></script>
+   		<script src="js/messages.js"></script>
+   	</body>
+</html>
