@@ -67,9 +67,12 @@ public class GCMIntentService extends com.worklight.androidgap.push.GCMIntentSer
  			
  		PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);		
  		
-		Notification.Builder notificationBuilder = new Notification.Builder(
-				this).setSmallIcon(icon).setTicker(ticker).setWhen(when)
-				.setContentTitle(title).setContentText(msg)
+		Notification.Builder notificationBuilder = new Notification.Builder(this)
+                .setSmallIcon(icon)
+                .setTicker(ticker)
+                .setWhen(when)
+				.setContentTitle(title)
+                .setContentText(msg)
 				.setStyle(new Notification.BigTextStyle().bigText(msg))
 				.setContentIntent(pendingIntent);
  		
